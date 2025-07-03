@@ -50,7 +50,7 @@ Output:
 
 ```
 // Reverse casing:
-"OLLEh .REPOLEVEd Od UOY EKIL YNA FO ESEHT :STIURF ,ELPPA ,RAEP ?ANANAB I !OD"
+"OLLEh .REPOLEVEd Od UOY EKIL YNA FO ESEHT :STIURF ,ELPPA ,RAEP ?ANANAB i !OD"
 
 // Capitalize each word:
 "Olleh .Repoleved Od Uoy Ekil Yna Fo Eseht :Stiurf ,Elppa ,Raep ?Ananab I !Od"
