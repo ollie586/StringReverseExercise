@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefenOpdrachtStringTests", "OefenOpdrachtStringTests\OefenOpdrachtStringTests.csproj", "{A5C648EE-7879-4024-990B-CCB08CE0D702}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefenOpdrachtString", "OefenOpdrachtString\OefenOpdrachtString.csproj", "{7009016C-8CE9-42F7-A445-2602C626AD07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5C648EE-7879-4024-990B-CCB08CE0D702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C648EE-7879-4024-990B-CCB08CE0D702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C648EE-7879-4024-990B-CCB08CE0D702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C648EE-7879-4024-990B-CCB08CE0D702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7009016C-8CE9-42F7-A445-2602C626AD07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7009016C-8CE9-42F7-A445-2602C626AD07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7009016C-8CE9-42F7-A445-2602C626AD07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7009016C-8CE9-42F7-A445-2602C626AD07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBAF29D4-7E0B-4E6A-B68B-33527FF561E4}
+	EndGlobalSection
+EndGlobal
