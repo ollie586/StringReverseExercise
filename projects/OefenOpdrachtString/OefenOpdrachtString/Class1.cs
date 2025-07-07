@@ -16,6 +16,7 @@ public class StringReverser
     public string Opdracht2(string text)
     {
         var arr = text.Split(' ');
+        var words = arr.Count() - 1;
         var result = "";
         foreach (var b in arr)
         {
@@ -25,7 +26,7 @@ public class StringReverser
                 result += c;
             }
 
-            if (arr[13] != b)
+            if (arr[words] != b)
             {
                 result += " ";
             }
@@ -38,6 +39,7 @@ public class StringReverser
     public string Opdracht3_1(string text)
     {
         var arr = text.Split(" ");
+        var words = arr.Count() - 1;
         var result = "";
         foreach (var b in arr)
         {
@@ -56,10 +58,9 @@ public class StringReverser
                 {
                     result += c;
                 }
-
             }
 
-            if (arr[13] != b)
+            if (arr[words] != b)
             {
                 result += " ";
             }
@@ -71,6 +72,7 @@ public class StringReverser
     public string Opdracht3_2(string text)
     {
         var arr = text.Split(" ");
+        var words = arr.Count() - 1;
         var result = "";
         foreach (var b in arr)
         {
@@ -83,21 +85,24 @@ public class StringReverser
                     result += c;
                 }
                 else
+                if (count == 1)
                 {
-                    if (count == 1)
-                    {
-                        result += char.ToUpper(c);
-                        count++;
-                    }
-                    else
-                    {
-                        result += char.ToLower(c);
-                        count++;
-                    }
+                    result += char.ToUpper(c);
+                    count++;
+                }
+                else if (count != 1)
+                {
+                    result += char.ToLower(c);
+                    count++;
+                }
+                else
+                {
+                    result += c;
+
                 }
             }
 
-            if (arr[13] != b)
+            if (arr[words] != b)
             {
                 result += " ";
             }
@@ -110,6 +115,7 @@ public class StringReverser
     {
         var arr = text.Split(" ");
         var result = "";
+        var words = arr.Count() - 1;
         var count = 1;
         foreach (var b in arr)
         {
@@ -117,35 +123,32 @@ public class StringReverser
 
             foreach (var c in letters)
             {
-                if (c == '.' || c == ':' || c == ',' || c == '!' || c == '?')
+                if (c == '.' || c == '!' || c == '?')
                 {
-                    result += c;
-                    if (c == '.' || c == '!' || c == '?')
-                    {
-                        count = 1;
-                        var characters = result.Count();
-                        var remaining = characters - 2;
-                        result = result.Remove(remaining, 2);
-                        result += c + " ";
-                    }
+                    count = 1;
+                    var characters = result.Count();
+                    var remaining = characters - 1;
+                    result = result.Remove(remaining, 1);
+                    result += c + " ";
+                }
+                else if (count == 1)
+                {
+                    result += char.ToUpper(c);
+                    count++;
+                }
+                else if (count != 1)
+                {
+                    result += char.ToLower(c);
+
                 }
                 else
                 {
-                    if (count == 1)
-                    {
-                        result += char.ToUpper(c);
-                        count++;
-                    }
-                    else
-                    {
-                        result += char.ToLower(c);
-
-                    }
+                    result += c;
                 }
 
             }
 
-            if (arr[13] != b)
+            if (arr[words] != b)
             {
                 result += " ";
             }
