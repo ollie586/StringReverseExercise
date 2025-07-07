@@ -58,6 +58,7 @@ public class StringReverser
                 {
                     result += c;
                 }
+
             }
 
             if (arr[words] != b)
@@ -80,12 +81,7 @@ public class StringReverser
             var count = 1;
             foreach (var c in letters)
             {
-                if (c == '.' || c == ':' || c == ',' || c == '!' || c == '?')
-                {
-                    result += c;
-                }
-                else
-                if (count == 1)
+                if (count == 1 && char.IsLower(c))
                 {
                     result += char.ToUpper(c);
                     count++;
@@ -145,7 +141,6 @@ public class StringReverser
                 {
                     result += c;
                 }
-
             }
 
             if (arr[words] != b)
